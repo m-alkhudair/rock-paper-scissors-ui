@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js-files/script.js" defer></script>
+    <title>Rock, Paper, Scissors!</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <div id="choices">
+        <button id="rock" class="gameButton" type="button">Rock</button>
+        <button id="paper" class="gameButton" type="button">Paper</button>
+        <button id="scissors" class="gameButton" type="button">Scissors</button>
+    </div>
+
+    <div id="container">
+        <div id="roundContainer">
+            <h2>Round</h2>
+            <div id="round">
+                <div id="computer"><span>Instructions:</span></div>
+                <div id="user">Start playing by clicking on either Rock, Paper, or Scissors.</div>
+            </div>    
+        </div>
+    
+        <div id="resultsContainer">
+            <h2>Results</h2>
+            <div id="roundResults" class="disappear"></div>
+            <div id="totalScore" class="disappear"></div>   
+            <button id="reset" class="disappear" type="reset">Reset</button>     
+        </div>
+    </div>
+
+</body>
+</html>

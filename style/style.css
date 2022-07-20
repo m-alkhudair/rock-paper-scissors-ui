@@ -1,0 +1,92 @@
+@font-face {
+    font-family: play;
+    src: url(/fonts/Play/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: play;
+    src: url(/fonts/Play/Play-Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'play', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(47, 46, 46);
+    /* border: 1px solid red; */
+}
+
+body {
+    height: 100vh;
+    background-color: #f0f0f3;
+}
+
+div, h1, h2 {
+    margin: 30px;
+    text-align: center;
+}
+
+h1, h2 {
+    /* width: 100%; */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px hsla(240, 12%, 72%, 0.443), inset -10px -10px 10px hsla(240, 12%, 72%, 0.25), inset 10px 10px 10px #ffffff;
+}
+
+li {
+    list-style: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+#choices {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#roundContainer, div#resultsContainer {
+    /* border: 1px solid red; */
+    width: 50%;
+}
+
+div#round, div#roundResults, div#totalScore {
+    box-shadow: inset -10px -10px 10px hsla(0, 0%, 100%, 0.702), inset 10px 10px 10px hsla(240, 12%, 72%, 0.2);
+    padding: 10px 0;
+}
+
+div#round {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.disappear {
+    display: none;
+}
+
+button {
+    font-size: 36px;
+    padding: 40px 0;
+    width: 20%;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f3;
+    box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px hsla(240, 12%, 72%, 0.443);
+}
+
+button:hover {
+    box-shadow: inset -10px -10px 10px hsla(0, 0%, 100%, 0.702), inset 10px 10px 10px hsla(240, 12%, 72%, 0.2);
+}
+
+button#reset {
+    font-size: 20px;
+    padding: 20px 0;
+}
